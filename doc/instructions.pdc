@@ -4,28 +4,50 @@ author: People
 documentclass: article
 classoption: twoside
 toc: true
-geometry: "left=2.5cm, right=3.5cm, top=2.5cm, bottom=2.5cm"
+geometry: "left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm"
 packages: []
 ---
 
 # Intro
 
 General stuff about the goals / target audience and what not.
+General concepts.
 
-# How to play
 
-The aim of the game is to amass the largest amount money (¤).
 
-The game is played.
+# Cards
 
-# Rules
+
+## Research Deck
+
+The research decks contains technology that can
+be researched by a user, at a given cost,
+for his  / deployment.
+
+### Infrastructure
+
+### Protocols
+
+### Applications
+
+## User
+
+
+# Setup
+
+
+
+# The table
+
+
+
+# Game Play
 
 The game is run using rounds.
 Every round is split into four distinct phases.
 
-## Phases
 
-### Buy / build
+## Buy / build
 
 The five top most cards of the Research deck are laid face up.
 Every player picks either:
@@ -35,7 +57,8 @@ one of them being discarded by the player.
 
 A player can have a maximum of 5 cards in his hand.
 
-### User / infrastructure allocation
+
+## User / infrastructure allocation
 
 The first player of the round picks a card from the User deck.
 This card determines the user demand for services that provide certain features.
@@ -44,7 +67,10 @@ Every user can distribute the amount of users determined by the card, subject to
 * The user being able to allocate enough bandwidth for every user
 that will be using the application
 
-### Revenue / Cleanup
+Users
+
+
+## Revenue / Cleanup
 
 Every card drawn is placed at the bottom of their respective decks.
 Every user then gains money as follows:
@@ -55,14 +81,11 @@ RenvenueUsers(x) is defined as:
 
     RevenueUsers(x) = LocalUsers(x) + for every interopservice y, Min(Users(x), InteroperableUsers(y))
 
-## Decks
 
-### Research Deck
 
-#### Infrastructure
+# Winning
 
-#### Protocols
+The aim of the game is to amass the largest amount money (¤).
 
-#### Applications
+The game is played.
 
-### User
