@@ -1,12 +1,68 @@
 ---
 title: WaisWebGame
 author: People
+documentclass: article
+classoption: twoside
+toc: true
+geometry: "left=2.5cm, right=3.5cm, top=2.5cm, bottom=2.5cm"
+packages: []
 ---
 
 # Intro
 
 General stuff about the goals / target audience and what not.
 
+# How to play
+
+The aim of the game is to amass the largest amount money (¤).
+
+The game is played.
+
 # Rules
 
-Perhaps separate this into phases and stuff.
+The game is run using rounds.
+Every round is split into four distinct phases.
+
+## Phases
+
+### Buy / build
+
+The five top most cards of the Research deck are laid face up.
+Every player picks either:
+* One of the face up cards
+* Two of the face down cards,
+one of them being discarded by the player.
+
+A player can have a maximum of 5 cards in his hand.
+
+### User / infrastructure allocation
+
+The first player of the round picks a card from the User deck.
+This card determines the user demand for services that provide certain features.
+Every user can distribute the amount of users determined by the card, subject to:
+* The user having an application that provides the requested features
+* The user being able to allocate enough bandwidth for every user
+that will be using the application
+
+### Revenue / Cleanup
+
+Every card drawn is placed at the bottom of their respective decks.
+Every user then gains money as follows:
+
+    Money = Vx, x <- App, Bandwidth(x) * RevenueUsers(x)
+
+RenvenueUsers(x) is defined as:
+
+    RevenueUsers(x) = LocalUsers(x) + for every interopservice y, Min(Users(x), InteroperableUsers(y))
+
+## Decks
+
+### Research Deck
+
+#### Infrastructure
+
+#### Protocols
+
+#### Applications
+
+### User
