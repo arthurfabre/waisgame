@@ -1,19 +1,72 @@
+#############
+# Settings
+#############
+
+#############
+# Make options
+#############
+
+# Set the shell to be bash
+SHELL:=/bin/bash
+
+# Sane exit / error reporting options for bash
+# errexit: exit bash with $? if $? != 0
+# pipefail: a | b will exit with the first $? != 0 instead of the $? of b
+export SHELLOPTS:=errexit:pipefail
+
+# Delete target files on error
+.DELETE_ON_ERROR:
+
+# Disable built in suffix rules
+.SUFFIXES:
+
+# Disable builtin pattern rules
+MAKEFLAGS+=-r
+
+# Enable second expansion
+.SECONDEXPANSION:
+
+# Set default target
+.DEFAULT_GOAL:=build
+
+#############
+# Variables
+#############
+
+# Pandoc compiler to use
 PANDOC:=pandoc
 
-PANDOCOPTS:=$(PANDOCOPTS)
+# Extension for pandoc files
+PANDOCEXT:=pdc
 
 # Number headers
 PANDOCOPTS+= -N
 
-# Report should be a standalone file
+# Documents should be a standalone file
 PANDOCOPTS+= -s
 
-# All files
-ALLREPORTS:=$(patsubst %.pdc,%.pdf,$(wildcard *.pdc))
+# All the documents to build
+DOCS:=$(patsubst %.$(PANDOCEXT),%.pdf,$(wildcard *.$(PANDOCEXT)))
 
-# Default rule - build everything
-all: $(ALLREPORTS)
+# Verborsity settings. One to print commands, anything else to keep te build silent.
+ifeq ($(V),1)
+  Q:=
+else
+  Q:=@
+endif
+
+#############
+# Rules
+#############
 
 # Build pandoc flavoured markdown reports to pdf
-%.pdf: %.pdc
-	@$(PANDOC) $(PANDOCOPTS) $< -o $@
+%.pdf: %.pdc $$(wildcard %_sections/*.pdc)
+	$Q$(PANDOC) $(PANDOCOPTS) $^ -o $@
+
+# Default rule - build everything
+build: $(DOCS)
+
+# Clean target
+.PHONY:clean
+clean:
+	$Q$(RM) $(DOCS)
