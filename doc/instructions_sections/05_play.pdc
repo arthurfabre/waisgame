@@ -75,3 +75,8 @@ Every player is awarded money by the Bank as follows:
 * For every interoperable application Y the player has,
 `Min(LocalUsers(Y), InteroperableUsers(Y)) * BandwidthPerUser(Y)`
 
+Two Applications are interoperable if:
+
+* They are the same application
+* The entire protocol stack used by the applications
+is identical.
