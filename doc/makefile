@@ -45,6 +45,9 @@ PANDOCOPTS+= -N
 # Documents should be a standalone file
 PANDOCOPTS+= -s
 
+# Template to use
+TEMPLATE:=gameinstructions.tex
+
 # All the documents to build
 DOCS:=$(patsubst %.$(PANDOCEXT),%.pdf,$(wildcard *.$(PANDOCEXT)))
 
@@ -61,7 +64,7 @@ endif
 
 # Build pandoc flavoured markdown reports to pdf
 %.pdf: %.pdc $$(wildcard %_sections/*.pdc)
-	$Q$(PANDOC) $(PANDOCOPTS) $^ -o $@
+	$Q$(PANDOC) $(PANDOCOPTS) --template $(TEMPLATE) $^ -o $@
 
 # Default rule - build everything
 build: $(DOCS)
