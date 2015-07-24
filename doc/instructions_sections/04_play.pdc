@@ -47,10 +47,19 @@ Protocols can be licensed in three ways:
     * Closed: The protocol cannot be used by any other player.
     This is denoted by a black marker.
 
-A player deploying a protocol for the first time,
+Players deploying infrastructure are awarded the bandwidth
+provided by the infrastructure in the form of bandwidth tokens.
+Additionally, if the infrastructure features an interconnect,
+every player part of the interconnect is awarded the bandwidth
+bonus of that infrastructure.
+
+Players deploying a protocol for the first time,
 should determine its licensing status.
 This status can be changed to be less restrictive in subsequent
 Investment Phases, but cannot become more restrictive.
+
+Once every player has played,
+all of the research cards face up should be discarded.
 
 
 ## Allocation Phase
@@ -61,22 +70,21 @@ This card determines the user demand for services providing certain features.
 Players distribute the amount of users determined by the card,
 on one of their applications subject to:
 
-* The player having an application that provides the requested features
+* The player having an application that provides the requested features.
 * The player being able to allocate enough bandwidth for every user
-that will be using the application
+that will be using the application.
+
+Once a user is provisioned on an application,
+the required bandwidth tokens must be returned to the Bank.
 
 
 ## Revenue Phase
 
+Every player is awarded money by the Bank as follows:
 
-Every card drawn is placed at the bottom of their respective decks.
-Every user then gains money as follows:
-
-    Money = Vx, x <- App, Bandwidth(x) * RevenueUsers(x)
-
-RenvenueUsers(x) is defined as:
-
-    RevenueUsers(x) = LocalUsers(x) + for every interopservice y, Min(Users(x), InteroperableUsers(y))
-
-
+* 2 monies as part of Government Funding.
+* For every application X the player has,
+`BandwidthPerUser(X) * Users(X)`
+* For every interoperable application Y the player has,
+`Min(LocalUsers(Y), InteroperableUsers(Y)) * BandwidthPerUser(Y)`
 
