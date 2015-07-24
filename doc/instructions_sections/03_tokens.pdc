@@ -4,7 +4,8 @@
 ## User Tokens
 
 User tokens are placed on applications.
-Every token represents a single active user.
+Every token represents a single active user,
+provisioned on the application.
 
 
 ## Bandwidth Tokens
@@ -12,6 +13,7 @@ Every token represents a single active user.
 Bandwidth tokens are placed on infrastructure.
 They represent the bandwidth that is not being
 used by any of the applications running on the infrastructure.
+
 
 ## License Tokens
 
