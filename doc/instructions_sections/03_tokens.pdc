@@ -5,20 +5,20 @@
 
 User tokens are placed on applications.
 Every token represents a single active user,
-provisioned on the application.
+provisioned on that application.
 
 
 ## Bandwidth Tokens
 
 Bandwidth tokens are placed on infrastructure.
 They represent the bandwidth that is not being
-used by any of the applications running on the infrastructure.
+used by any of the applications running on that piece infrastructure.
 
 
-## License Tokens
+## Licence Tokens
 
-License tokens are placed on protocols.
-The represent the license status of the protocol,
+Licence tokens are placed on protocols.
+They represent the licence status of the protocol,
 which can be one of the following:
 
 * Open: The protocol can be used by any player,

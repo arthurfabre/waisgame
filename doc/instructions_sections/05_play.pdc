@@ -32,7 +32,7 @@ required to do so.
 * Any dependencies the card has on protocol features
 must be met for the player to purchase the card.
 * Any protocols must be suitably licensed,
-if they are already deployed by a player using a License Token.
+if they are already deployed by a player using a Licence Token.
 
 Players deploying infrastructure are awarded the bandwidth
 provided by the infrastructure in the form of bandwidth tokens.

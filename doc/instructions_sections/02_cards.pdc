@@ -10,11 +10,11 @@ for their deployment.
 ### Infrastructure
 
 Infrastructure cards represent physical communication infrastructure,
-such as fiber cable runs, or satellite links.
+such as fibre cable runs, or satellite links.
 Every card provides an amount of bandwidth that can be allocated
 to application users.
 
-Some infrastructure cards feature a interconnect symbol.
+Some infrastructure cards feature an interconnect symbol.
 These cards provide additional bandwidth for every other
 user that deploys them.
 
