@@ -5,14 +5,40 @@
 
 The research decks contains technology that can
 be researched by a user, at a given cost,
-for his  / deployment.
+for his deployment.
 
 ### Infrastructure
 
+Infrastructure cards represent physical communication infrastructure,
+such as fiber cable runs, or satellite links.
+Every card provides an amount of bandwidth that can be allocated
+to application users.
+
 ### Protocols
+
+Protocol cards represent a communication standard or layer.
+Every protocol depends on features that can be provided
+by other protocols,
+and provides features.
+
+Possible features are:
+
+* Reliability
+* Security
+* Sessions
+* Addressability
+* Low latency
 
 ### Applications
 
+Application cards represent user facing applications
+or services, such as email, social media or video chat.
+Every application depends on protocol level features,
+and provides certain types of service.
+
 ## User
 
-
+User cards represent user demand for types of
+Applications.
+They specify both the feature(s) that a set of users are interested in,
+and the amount of users interested in them.
