@@ -56,17 +56,18 @@ Investment Phases, but cannot become more restrictive.
 ## Allocation Phase
 
 The first player of the round picks a card from the User deck.
-This card determines the user demand for services that provide certain features.
+This card determines the user demand for services providing certain features.
 
-Every user can distribute the amount of users determined by the card,
+Players distribute the amount of users determined by the card,
 on one of their applications subject to:
 
-* The user having an application that provides the requested features
-* The user being able to allocate enough bandwidth for every user
+* The player having an application that provides the requested features
+* The player being able to allocate enough bandwidth for every user
 that will be using the application
 
 
 ## Revenue Phase
+
 
 Every card drawn is placed at the bottom of their respective decks.
 Every user then gains money as follows:
