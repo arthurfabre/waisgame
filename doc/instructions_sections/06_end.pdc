@@ -4,7 +4,7 @@ The aim of the game is to amass the largest amount money.
 The game is played until the supply of user tokens is exhausted.
 
 Should the supply of user tokens run out mid way through a round,
-the round will be run to it's end (including the revenue phase).
+the round will be run to its end (including the revenue phase).
 Replacement tokens should be used to give every player an equal opportunity
 to provision Users.
 
