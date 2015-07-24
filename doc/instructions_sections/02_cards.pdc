@@ -44,9 +44,11 @@ and provides certain types of service.
 
 Different applications require different amounts of bandwidth per user.
 
+
 ## User Deck
 
-User cards represent user demand for types of
-Applications.
-They specify both the feature(s) that a set of users are interested in,
-and the number of users interested in them.
+User cards represent user demand for types of Applications:
+Communication, Entertainment, Money, Productivity, and
+Knowledge.
+They specify both the application type that a set of users are interested in,
+and the number of users interested.
