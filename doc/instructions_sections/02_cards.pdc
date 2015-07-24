@@ -44,7 +44,7 @@ and provides certain types of service.
 
 Different applications require different amounts of bandwidth per user.
 
-## User
+## User Deck
 
 User cards represent user demand for types of
 Applications.
