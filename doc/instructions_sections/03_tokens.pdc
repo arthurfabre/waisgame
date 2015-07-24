@@ -1,0 +1,34 @@
+# Tokens
+
+
+## User Tokens
+
+User tokens are placed on applications.
+Every token represents a single active user.
+
+
+## Bandwidth Tokens
+
+Bandwidth tokens are placed on infrastructure.
+They represent the bandwidth that is not being
+used by any of the applications running on the infrastructure.
+
+## License Tokens
+
+License tokens are placed on protocols.
+The represent the license status of the protocol,
+which can be one of the following:
+
+* Open: The protocol can be used by any player,
+royalty free. This is denoted by the absence
+of any token on the protocol.
+* RAND (Reasonable and non discriminatory): The protocol
+can be used by other players by paying the original
+deployer a fixed, one time fee determined
+by the original deployer.
+This fee will also apply to any other players interested
+in using this protocol.
+This is denoted by a white marker.
+* Closed: The protocol cannot be used by any other player.
+This is denoted by a black marker.
+

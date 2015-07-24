@@ -32,20 +32,7 @@ required to do so.
 * Any dependencies the card has on protocol features
 must be met for the player to purchase the card.
 * Any protocols must be suitably licensed,
-if they are already deployed by a player.
-Protocols can be licensed in three ways:
-    * Open: The protocol can be used by any player,
-    royalty free. This is denoted by the absence
-    of any marker on the protocol.
-    * RAND (Reasonable and non discriminatory): The protocol
-    can be used by other players by paying the original
-    deployer a fixed, one time fee determined
-    by the original deployer.
-    This fee will also apply to any other players interested
-    in using this protocol.
-    This is denoted by a white marker.
-    * Closed: The protocol cannot be used by any other player.
-    This is denoted by a black marker.
+if they are already deployed by a player using a License Token.
 
 Players deploying infrastructure are awarded the bandwidth
 provided by the infrastructure in the form of bandwidth tokens.
