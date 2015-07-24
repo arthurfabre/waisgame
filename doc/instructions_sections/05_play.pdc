@@ -3,21 +3,22 @@
 The game is run using rounds.
 Every round is split into 3 distinct phases.
 The first player of a round starts every phase.
-The first player of the next round is the player to left
-of the current first player.
+Every round, the player who starts first rotates clockwise.
 
 
 ## Investment Phase
 
 The goal of this phase if for players
-to build up their deployment.
+to build up their deployed assets.
 
 TODO - stuff about deployments, and trees.
 
-The five top most cards of every research deck
-are laid in face up, in their respective rows.
+The four top most cards of every research deck
+are laid face up, in their respective rows.
 
-Every player can purchase, from every research deck, in turn:
+Every player can purchase, from every research deck,
+prior to the next player's turn.
+They can purchase:
 
 * One of the face up cards
 * One of the face down cards.
@@ -32,7 +33,7 @@ required to do so.
 * Any dependencies the card has on protocol features
 must be met for the player to purchase the card.
 * Any protocols must be suitably licensed,
-if they are already deployed by a player using a Licence Token.
+if they are already deployed by another player using a Licence Token.
 
 Players deploying infrastructure are awarded the bandwidth
 provided by the infrastructure in the form of bandwidth tokens.
@@ -55,7 +56,7 @@ The first player of the round picks a card from the User deck.
 This card determines the user demand for services providing certain features.
 
 Players distribute the amount of users determined by the card,
-on one of their applications subject to:
+on one of their applications, subject to:
 
 * The player having an application that provides the requested features.
 * The player being able to allocate enough bandwidth for every user
@@ -70,10 +71,14 @@ the required bandwidth tokens must be returned to the Bank.
 Every player is awarded money by the Bank as follows:
 
 * 2 monies as part of Government Funding.
-* For every application X the player has,
-`BandwidthPerUser(X) * Users(X)`
-* For every interoperable application Y the player has,
-`Min(LocalUsers(Y), InteroperableUsers(Y)) * BandwidthPerUser(Y)`
+* For every application `A` the player receives
+`BandwidthPerUser(A) * Users(A)` monies.
+* For every interoperable application `A`
+compatible with another player's application `I`,
+the player additionally receives
+`Min(Users(A), Users(I)) * BandwidthPerUser(A)` monies.
+(This prevents a player from unfairly profiting
+from the users of another player's application)
 
 Two Applications are interoperable if:
 

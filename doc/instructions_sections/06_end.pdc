@@ -5,6 +5,7 @@ The game is played until the supply of user tokens is exhausted.
 
 Should the supply of user tokens run out mid way through a round,
 the round will be run to its end (including the revenue phase).
-Replacement tokens should be used to give every player an equal opportunity
+Replacement tokens (ie unused bandwidth or license tokens)
+should be used to give every player an equal opportunity
 to provision Users.
 

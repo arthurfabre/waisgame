@@ -7,7 +7,7 @@ The research decks contain technology that can
 be researched by players, at a given cost,
 for their deployment.
 
-### Infrastructure
+### Infrastructure Deck
 
 Infrastructure cards represent physical communication infrastructure,
 such as fibre cable runs, or satellite links.
@@ -18,7 +18,7 @@ Some infrastructure cards feature an interconnect symbol.
 These cards provide additional bandwidth for every other
 user that deploys them.
 
-### Protocols
+### Protocols Deck
 
 Protocol cards represent a communication standard or layer.
 Every protocol depends on features that can be provided
@@ -35,7 +35,7 @@ Possible features are:
 
 Protocol cards can be subject to licensing.
 
-### Applications
+### Applications Deck
 
 Application cards represent user facing applications
 or services, such as email, social media or video chat.
