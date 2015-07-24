@@ -1,21 +1,31 @@
 # Game Play
 
 The game is run using rounds.
-Every round is split into four distinct phases.
+Every round is split into 3 distinct phases.
 
+## Investment Phase
 
-## Buy / build
+The five top most cards of every research deck
+are laid in face up, in their respective rows.
 
-The five top most cards of the Research deck are laid face up.
-Every player picks either:
+Every player can purchase, in turn, from every research deck:
+
 * One of the face up cards
-* Two of the face down cards,
-one of them being discarded by the player.
+* One of the face down cards.
+The player draws 2 cards from the deck,
+and can purchase at most 1 of the drawn cards.
+The other one should be discarded immediately.
 
-A player can have a maximum of 5 cards in his hand.
+Players can purchase cards only if they have the funds
+required to do so.
 
+Any dependencies the card has on protocol features
+must be met for the player to purchase the card.
 
-## User / infrastructure allocation
+* The player having enough funds to purchase the card.
+* If the card is a protocol, the p
+
+## Allocation Phase
 
 The first player of the round picks a card from the User deck.
 This card determines the user demand for services that provide certain features.
@@ -27,7 +37,7 @@ that will be using the application
 Users
 
 
-## Revenue / Cleanup
+## Revenue Phase
 
 Every card drawn is placed at the bottom of their respective decks.
 Every user then gains money as follows:
